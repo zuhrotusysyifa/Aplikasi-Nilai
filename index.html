@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai</title>
+    <link rel="icon" href="img/notes.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Aplikasi Nilai</h1>
+    <br>
+    <form id="nilaiForm">
+        <div class="mb-3">
+            <label for="nim" class="form-label">NIM</label>
+            <input type="text" class="form-control" id="nim" required>
+        </div>
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" required>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header teori-header">
+                        <h5>Nilai Teori</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="presensiTeori" class="form-label">Presensi</label>
+                            <input type="number" class="form-control" id="presensiTeori" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tugasTeori" class="form-label">Tugas</label>
+                            <input type="number" class="form-control" id="tugasTeori" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="utsTeori" class="form-label">UTS</label>
+                            <input type="number" class="form-control" id="utsTeori" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="uasTeori" class="form-label">UAS</label>
+                            <input type="number" class="form-control" id="uasTeori" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header praktik-header">
+                        <h5>Nilai Praktik</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="presensiPraktik" class="form-label">Presensi</label>
+                            <input type="number" class="form-control" id="presensiPraktik" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tugasPraktik" class="form-label">Tugas</label>
+                            <input type="number" class="form-control" id="tugasPraktik" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="utsPraktik" class="form-label">UTS</label>
+                            <input type="number" class="form-control" id="utsPraktik" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="uasPraktik" class="form-label">UAS</label>
+                            <input type="number" class="form-control" id="uasPraktik" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button type="simpan" class="btn btn-primary" onclick="calculateGrade()">Simpan</button>
+        <button type="batal" class="btn btn-danger">Batal</button>
+    </form>
+    <hr/>
+    <h2>Rincian Nilai</h2>
+    <table class="table table-bordered result-table">
+        <div class="card-header">
+            <th>No</th>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Presensi</th>
+            <th>Tugas</th>
+            <th>UTS</th>
+            <th>UAS</th>
+            <th>Nilai Akhir</th>
+            <th>Grade</th>
+          </div>
+        <tbody id="resultTableBody">
+        </tbody>
+    </table>
+    <button type="reset" class="btn btn-warning" onclick="resetTable()">Reset</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

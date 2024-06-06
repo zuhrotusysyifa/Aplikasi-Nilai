@@ -1,0 +1,69 @@
+body {
+    background-color: bisque;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
+.mb-3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.mb-3 label {
+    width: 150px;
+    margin-right: 10px;
+}
+.mb-3 input {
+    flex: 1;
+}
+.card-header{
+    text-align: center;
+}
+.teori-header {
+    background-color: #afe2e9;
+    color:black;
+}
+
+.praktik-header {
+    background-color: pink;
+    color: black;
+}
+
+.form-control {
+    border-color: black;
+}
+.col {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.col-teori{
+    background-color: #e0f7fa;
+}
+.col-praktik {
+    background-color: pink;
+}
+.container {
+    margin-top: 20px;
+}
+.table {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #4e9afd ;
+}
+.result-table th{
+    margin-top: 20px;
+}
+button {
+    border-radius: 15px;
+}
+button:hover {
+   opacity: 0.5;
+    
+}
+
+
